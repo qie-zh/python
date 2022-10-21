@@ -1,3 +1,3 @@
-a = 9
-b = 3
-print(a + b)
+import sys
+print(sys.version)
+#print(sys.path)
