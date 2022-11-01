@@ -3,10 +3,13 @@ fruit_key = list(fruit.keys())
 fruit_key.append('exit')
 for i in range(5):
     print('[%d] %s'%(i+1 if i != 4 else 0,fruit_key[i]))
+
 input = list(map(int,input().split()))
 for i in range(5):
     n = input[i]
     if n == 0:
         break
-    else:
+    elif  0 < n < 5:
         print('price = %.2f'%(fruit[fruit_key[n-1]]))
+    else:
+        print('price = %.2f'%(0.00))
