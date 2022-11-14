@@ -1,1 +1,2 @@
-print([i for i in range(0,0)])
+number,name,grade1,grade2,grade3 = input().split()
+print(grade3)
